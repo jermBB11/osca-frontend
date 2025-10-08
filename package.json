@@ -16,7 +16,8 @@
     "react-dom": "19.1.0",
     "react-hot-toast": "^2.6.0",
     "react-select": "^5.10.2",
-    "react-toast": "^1.0.3"
+    "react-toast": "^1.0.3",
+    "sweetalert2": "^11.24.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

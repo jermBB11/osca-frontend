@@ -6,6 +6,7 @@ import { useRouter } from "next/router"
 import type React from "react"
 import { useState, useEffect, type FormEvent } from "react"
 import toast from "react-hot-toast"
+import Swal from "sweetalert2"
 
 
 
@@ -147,8 +148,15 @@ export default function Page() {
 
         await submitRec();
         console.log("Form submitted:", formData)
-        route.reload();
-        toast.success("Record Added");
+        Swal.fire({
+            icon: 'success',
+            title: 'Record Added',
+            confirmButtonText: 'OK',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                route.reload();
+            }
+        });
         setIsSubmitting(false)
     }
 
