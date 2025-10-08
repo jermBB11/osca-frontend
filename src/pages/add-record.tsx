@@ -5,7 +5,7 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import type React from "react"
 import { useState, useEffect, type FormEvent } from "react"
-import toast from "react-hot-toast"
+
 import Swal from "sweetalert2"
 
 
