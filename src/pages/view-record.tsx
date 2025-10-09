@@ -74,42 +74,42 @@ function View() {
                     </div>
 
                 </div>
-                <div>
-                    <table className="table">
+                <div className="overflow-x-auto w-full">
+                    <table className="table table-zebra w-full">
                         <thead>
-                            <tr>
-                                <th>Last Name</th>
-                                <th>First Name</th>
-                                <th>Middle Name</th>
-                                <th>Name Extension</th>
-                                <th>Sex</th>
-                                <th>Barangay</th>
-                                <th>Barangay Unit</th>
-                                <th>Bith Date</th>
-                                <th>Age</th>
-                                <th>OSCA Id No.</th>
-                                <th>Remarks</th>
-                                <th>Date Applied</th>
-                                <th>Date Issued</th>
+                            <tr className='bg-green-600 text-white font-bold text-center'>
+                                <th className='border-black border-1'>Last Name</th>
+                                <th className='border-black border-1'>First Name</th>
+                                <th className='border-black border-1'>Middle Name</th>
+                                <th className='border-black border-1'>Name Extension</th>
+                                <th className='border-black border-1'>Sex</th>
+                                <th className='border-black border-1'>Barangay</th>
+                                <th className='border-black border-1'>Barangay Unit</th>
+                                <th className='border-black border-1'>Bith Date</th>
+                                <th className='border-black border-1'>Age</th>
+                                <th className='border-black border-1'>OSCA Id No.</th>
+                                <th className='border-black border-1'>Remarks</th>
+                                <th className='border-black border-1'>Date Applied</th>
+                                <th className='border-black border-1'>Date Issued</th>
 
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody className='text-center text-sm'>
                             {data.map((d) => (
                                 <tr key={d.id}>
-                                    <td>{d.lastname}</td>
-                                    <td>{d.firstname}</td>
-                                    <td>{d.middle_name}</td>
-                                    <td>{d.suffix}</td>
-                                    <td>{d.sex}</td>
-                                    <td>{d.barangay}</td>
-                                    <td>{d.unit}</td>
-                                    <td>{d.birthdate}</td>
-                                    <td>{d.age}</td>
-                                    <td>{d.osca_id}</td>
-                                    <td>{d.remarks}</td>
-                                    <td>{d.date_applied}</td>
-                                    <td>{d.date_issued}</td>
+                                    <td className='border-black border-1'>{d.lastname}</td>
+                                    <td className='border-black border-1'>{d.firstname}</td>
+                                    <td className='border-black border-1'>{d.middle_name}</td>
+                                    <td className='border-black border-1'>{d.suffix}</td>
+                                    <td className='border-black border-1'>{d.sex}</td>
+                                    <td className='border-black border-1'>{d.barangay}</td>
+                                    <td className='border-black border-1'>{d.unit}</td>
+                                    <td className='border-black border-1'>{d.birthdate}</td>
+                                    <td className='border-black border-1'>{d.age}</td>
+                                    <td className='border-black border-1'>{d.osca_id}</td>
+                                    <td className='border-black border-1'>{d.remarks}</td>
+                                    <td className='border-black border-1'>{d.date_applied}</td>
+                                    <td className='border-black border-1'>{d.date_issued}</td>
                                 </tr>
                             ))}
                         </tbody>

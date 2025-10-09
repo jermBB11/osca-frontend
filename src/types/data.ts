@@ -1,5 +1,5 @@
 export default interface FormData {
-  id?: number; 
+  id?: string; 
   lastname: string;
   firstname: string;
   middle_name?: string | undefined;

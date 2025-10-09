@@ -4,7 +4,7 @@ import React from 'react'
 const Home = () => {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen bg-gray-50">
-      <h1 className="text-3xl font-bold text-black mb-10 tracking-wide">
+      <h1 className="text-3xl font-bold text-black mb-10 tracking-wide text-center" >
         OSCA Records Management System
       </h1>
 
@@ -13,7 +13,7 @@ const Home = () => {
           <div className="card bg-blue-600 w-80 shadow-lg hover:shadow-xl border border-gray-200 transition-transform hover:-translate-y-1 rounded-2xl cursor-pointer">
             <div className="card-body text-center py-8">
               <h2 className="text-2xl font-bold text-white">View Record</h2>
-              <p className='font-light text-xs text-white'>For viewing and printing record</p>
+              <p className='font-light text-xs text-white'>For viewing records</p>
             </div>
           </div>
         </Link>
